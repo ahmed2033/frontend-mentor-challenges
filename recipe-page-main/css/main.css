@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+}
+:root{
+    --Rose50:hsl(330, 100%, 98%);
+    --Rose800:hsl(332, 51%, 32%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Stone900: hsl(24, 5%, 18%);
+    --White: hsl(0, 0%, 100%); /*main background*/
+    --Stone100: hsl(30, 54%, 90%); /*body background*/
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --bodywidth:1440px;
+    --bodyPfontsize:16px;
+    --fontTwo:"Young Serif";
+    --fontTwoWeights: 400;
+    --fontOne:"Outfit";
+    --fontOneWeightsOne: 400;
+    --fontOneWeightsTwo: 600;
+    --fontOneWeightsThree: 700;
+
+}
+body{
+    width: var(--bodywidth);
+    height:300vh;
+    background-color: var(--Stone100);
+}
+.main{
+    width: 50%;
+    height: 90%;
+    margin: 5% auto ;
+    background-color: var(--White);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.photo{
+    
+    /* background-color: aqua; */
+    height: 20%;
+    width: 90%;
+
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    
+}
+.content{
+    /* background-color: cadetblue; */
+    height: 75%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+
+}
+.item, .itemspecial{
+    /* background-color: red; */
+    width: 100%;
+    height: 22%;
+    
+}
+
+.item hr{
+
+    border: 1px solid var(--Stone150);
+    margin-top: 9%;
+}
+
+.item .title h1{
+    font-family: var(--fontTwo);
+    font-weight: var(--fontTwoWeights);
+    font-size: 40px;
+    margin-bottom: 2%;
+
+}
+.item .description p, .secfour p{
+    font-family: var(--fontOne);
+    font-size: var(--bodyPfontsize);
+    color: var(--Stone600);
+    font-weight: var(--fontOneWeightsOne);
+    margin-bottom: 7%;
+
+}
+.item .list{
+    margin-left: 5%;
+    list-style-position: inside;
+    
+    
+    
+
+}
+.item .list h3{
+    font-family: var(--fontOne);
+    color: var(--Rose800);
+    font-weight: var(--fontOneWeightsTwo);
+    margin-bottom: 1%;
+}
+
+.item .list li{
+    line-height: 30px;
+    font-family: var(--fontOne);
+    font-size: var(--bodyPfontsize);
+    color: var(--Rose800);
+    
+    
+
+}
+.item .list li{
+    list-style-type: disc;
+
+}
+.item .list li label, .secthree li label{
+    font-weight:  var(--fontOneWeightsTwo);
+    color: var(--Stone900);
+    margin-left: 25px;
+}
+.item .list li span{
+    font-weight: var(--fontOneWeightsOne);
+    color: var(--Stone600);
+    
+}
+.sectwo, .secthree{
+    list-style-position: inside;
+}
+.sectwo h2, .secthree h2, .secfour h2{
+    font-family: var(--fontTwo);
+    font-weight: var(--fontTwoWeights);
+    font-size: 30px;
+    color: var(--Brown800);
+    margin-bottom: 2%;
+
+}
+.sectwo li, .secthree li{
+    line-height: 30px;
+    font-family: var(--fontOne);
+    font-size: var(--bodyPfontsize);
+    font-weight: var(--fontOneWeightsThree);
+    color: var(--Rose800);
+}
+.sectwo li{
+    list-style-type: disc;
+}
+.sectwo li span, .secthree li span{
+    font-weight: var(--fontOneWeightsOne);
+    color: var(--Stone600);
+    
+}
+.sectwo li span{
+    margin-left: 25px;
+
+}
+
+.secfour .tabledata{
+    width: 100%;
+}
+.secfour .tabledata span{
+    width: 100%;
+}
+.secfour .tabledata hr{
+    margin-bottom: 15px;
+    border: 1px solid var(--Stone150);
+}
+.secfour .tabledata .tableitems{
+    width: 45%;
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+.secfour .tabledata span p{
+    font-family: var(--fontOne);
+    font-size: var(--bodyPfontsize);
+    color: var(--Stone600);
+    font-weight: var(--fontOneWeightsOne);
+}
+.secfour .tabledata .tableitems span p{
+    color: var(--Brown800);
+    font-weight: var(--fontOneWeightsTwo);
+}
+.attribution{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
