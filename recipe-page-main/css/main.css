@@ -28,13 +28,13 @@
 }
 body{
     width: var(--bodywidth);
-    height:200vh;
+    height:100vh;
     background-color: var(--Stone100);
 }
 .main{
     width: 50%;
     height: 90%;
-    margin: 10% auto ;
+    margin: 15% auto ;
     background-color: var(--White);
     border-radius: 3%;
     display: flex;
